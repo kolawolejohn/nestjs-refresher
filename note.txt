@@ -10,3 +10,10 @@ first migration:
 npx prisma migrate dev --name init
 
 Set up your prisma service and module, add the @Global() to the prisma module, and also export it
+
+if you enconter this error 
+error: remote origin already exists. or remote: Repository not found.
+fatal: repository 'https://github.com/kolawolejohn/nestjs-basics-refresher.git/' not found
+
+Remove the existing origin with this command:
+  git remote remove origin
