@@ -1,0 +1,12 @@
+Install prisma, @prisma/client
+npx prisma init
+
+create your model, once that is done Run
+npx prisma generate (This will generate the Prisma Client)
+
+run migration when you are ready
+
+first migration:
+npx prisma migrate dev --name init
+
+Set up your prisma service and module, add the @Global() to the prisma module, and also export it
